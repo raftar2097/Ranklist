@@ -1,0 +1,39 @@
+<div class="row">
+  <div class="col-md-6 mx-auto">
+    <div class="card card-body">
+      <img class="logo" src="/img/logo.png">
+      <h3 class="text-center">Account Register</h3>
+      <form action="/users/register" method="post">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" name="name" value="{{name}}" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" name="email" class="form-control" value="{{email}}" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" name="password" class="form-control" value="{{password}}" required>
+        </div>
+        <div class="form-group">
+          <label for="password2">Confirm Password</label>
+          <input type="password" name="password2" class="form-control" value="{{password2}}" required>
+        </div>
+        <div class="form-group">
+          <label for="github">Github</label>
+          <input type="text" name="github" class="form-control" value="{{github}}" required>
+        </div>
+        <div class="form-group">
+          <label for="Spoj">Spoj</label>
+          <input type="text" name="spoj" class="form-control" value="{{spoj}}" required>
+        </div>
+        <div class="form-group">
+          <label for="Hackerearth">Hackerearth</label>
+          <input type="text" name="hackerearth" class="form-control" value="{{hackerearth}}" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
